@@ -4,11 +4,12 @@ def drawBoard(board):
     # This function prints out the board that it was passed.
 
     # "board" is a list of 10 strings representing the board (ignore index 0)
-    print(board[1] + '|' + board[2] + '|' + board[3], " ", board[4] + '|' + board[5] + '|' + board[6], " ", board[7] + '|' + board[8] + '|' + board[9])
+    print(board[7] + '|' + board[8] + '|' + board[9], " ", board[16] + '|' + board[17] + '|' + board[18], " ", board[25] + '|' + board[26] + '|' + board[27])
     print('-+-+-','  -+-+-','  -+-+-')
-    print(board[10] + '|' + board[11] + '|' + board[12], " ", board[13] + '|' + board[14] + '|' + board[15], " ", board[16] + '|' + board[17] + '|' + board[18])
+    print(board[4] + '|' + board[5] + '|' + board[6], " ", board[13] + '|' + board[14] + '|' + board[15], " ", board[22] + '|' + board[23] + '|' + board[24])
     print('-+-+-','  -+-+-','  -+-+-')
-    print(board[19] + '|' + board[20] + '|' + board[21], " ", board[22] + '|' + board[23] + '|' + board[24], " ", board[25] + '|' + board[26] + '|' + board[27])
-
+    print(board[1] + '|' + board[2] + '|' + board[3], " ", board[10] + '|' + board[11] + '|' + board[12], " ", board[19] + '|' + board[20] + '|' + board[21])
+    
 drawBoard(theBoard)
 
+print("Welcome to 3 Board Tic Tac Toe")
