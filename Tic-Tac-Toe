@@ -52,14 +52,22 @@ while (
     not(t3==t6==t9) and
     not(t1==t5==t9) and
     not(t3==t5==t7) and
-    not(t10==t11=t12) and
-    not(t13==t14=t15) and
-    not(t16==t17=t18) and
-    not(t10==t14=t18) and
-    not(t12==t14=t16) and
-    not(t10==t13=t16) and
-    not(t11==t14=t17) and
-    not(t12==t15=t18) and
+    not(t10==t11==t12) and
+    not(t13==t14==t15) and
+    not(t16==t17==t18) and
+    not(t10==t14==t18) and
+    not(t12==t14==t16) and
+    not(t10==t13==t16) and
+    not(t11==t14==t17) and
+    not(t12==t15==t18) and
+    not(t19==t20==t21) and
+    not(t22==t23==t24) and
+    not(t25==t26==t27) and
+    not(t19==t23==t27) and
+    not(t21==t23==t25) and
+    not(t19==t22==t25) and
+    not(t20==t23==t26) and
+    not(t21==t24==t27) and
     
     ) :
 
