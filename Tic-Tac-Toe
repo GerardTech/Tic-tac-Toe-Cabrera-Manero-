@@ -67,13 +67,38 @@ while (
     not(t21==t23==t25) and
     not(t19==t22==t25) and
     not(t20==t23==t26) and
-    not(t21==t24==t27) and
-    
+    not(t21==t24==t27) 
     ) :
 
     
     tileSelected=int(input("Select a tile: "))
-
+    if (
+       (t1==t2==t3) and
+       (t4==t5==t6) and
+       (t7==t8==t9) and
+       (t1==t4==t7) and
+       (t2==t5==t8) and
+       (t3==t6==t9) and
+       (t1==t5==t9) and
+       (t3==t5==t7) and
+       (t10==t11==t12) and
+       (t13==t14==t15) and
+       (t16==t17==t18) and
+       (t10==t14==t18) and
+       (t12==t14==t16) and
+       (t10==t13==t16) and
+       (t11==t14==t17) and
+       (t12==t15==t18) and
+       (t19==t20==t21) and
+       (t22==t23==t24) and
+       (t25==t26==t27) and
+       (t19==t23==t27) and
+       (t21==t23==t25) and
+       (t19==t22==t25) and
+       (t20==t23==t26) and
+       (t21==t24==t27)
+       ) :
+              
     if tileSelected==1:
         t1=symbol
     elif tileSelected==2:
