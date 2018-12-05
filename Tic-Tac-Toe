@@ -51,7 +51,16 @@ while (
     not(t2==t5==t8) and
     not(t3==t6==t9) and
     not(t1==t5==t9) and
-    not(t3==t5==t7)
+    not(t3==t5==t7) and
+    not(t10==t11=t12) and
+    not(t13==t14=t15) and
+    not(t16==t17=t18) and
+    not(t10==t14=t18) and
+    not(t12==t14=t16) and
+    not(t10==t13=t16) and
+    not(t11==t14=t17) and
+    not(t12==t15=t18) and
+    
     ) :
 
     
@@ -75,12 +84,49 @@ while (
         t8=symbol
     elif tileSelected==9:
         t9=symbol
+    elif tileSelected==10:
+        t10=symbol
+    elif tileSelected==11:
+        t11=symbol
+    elif tileSelected==12:
+        t12=symbol
+    elif tileSelected==13:
+        t13=symbol
+    elif tileSelected==14:
+        t14=symbol
+    elif tileSelected==15:
+        t15=symbol
+    elif tileSelected==16:
+        t16=symbol
+    elif tileSelected==17:
+        t17=symbol
+    elif tileSelected==18:
+        t18=symbol
+    elif tileSelected==19:
+        t19=symbol
+    elif tileSelected==20:
+        t20=symbol
+    elif tileSelected==21:
+        t21=symbol
+    elif tileSelected==22:
+        t22=symbol
+    elif tileSelected==23:
+        t23=symbol
+    elif tileSelected==24:
+        t24=symbol
+    elif tileSelected==25:
+        t25=symbol
+    elif tileSelected==26:
+        t26=symbol
+    elif tileSelected==27:
+        t27=symbol
+    
 #Print the board
 
-    print("|", t1, "|", t2, "|", t3, "|")
-    print("|", t4, "|", t5, "|", t6, "|")
-    print("|", t7, "|", t8, "|", t9, "|")
-
+    print("|", t1, "|", t2, "|", t3, "|", " ", "|", t10, "|", t11, "|", t12, "|", " ",  "|", t19, "|", t20, "|", t21, "|")
+    print("|", t4, "|", t5, "|", t6, "|", " ", "|", t13, "|", t14, "|", t15, "|", " ",  "|", t22, "|", t23, "|", t24, "|")
+    print("|", t7, "|", t8, "|", t9, "|", " ", "|", t16, "|", t17, "|", t18, "|", " ",  "|", t25, "|", t26, "|", t27, "|")
+    
     if symbol=="x":
         symbol="o"
     else:
