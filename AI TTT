@@ -1,0 +1,955 @@
+# Programming Task 
+# CABRERA, Joseph Christian D.
+# MANERO, Rlan Gerard G.
+
+#Bonus Features: Scoring, Rudimentary AI
+
+#Initialization(Variable Assignment)
+
+# Player 1 will be TRUE; AI will be FALSE
+p = True
+
+# Is board still playable? 
+boardcheck1 = True
+boardcheck2 = True
+boardcheck3 = True
+
+# Has someone won? (Is the last board finished being played on?)
+game = False
+
+# Tiles/Possible Moves
+t1,t2,t3,t4,t5,t6,t7,t8,t9 = [1,2,3,4,5,6,7,8,9]
+t10,t11,t12,t13,t14,t15,t16,t17,t18 = [10,11,12,13,14,15,16,17,18]
+t19,t20,t21,t22,t23,t24,t25,t26,t27 = [19,20,21,22,23,24,25,26,27]
+
+# Printing the Board
+print (" ")
+print ("+-----------+   +--------------+   +--------------+")
+print ("|", t1, "|", t2, "|", t3, "|   |", t10, "|", t11, "|", t12, "|   |", t19, "|", t20, "|", t21, "|" )
+print ("+---+---+---+   +----+----+----+   +----+----+----+")
+print ("|", t4, "|", t5, "|", t6, "|   |", t13, "|", t14, "|", t15, "|   |", t22, "|", t23, "|", t24, "|")
+print ("+---+---+---+   +----+----+----+   +----+----+----+")
+print ("|", t7, "|", t8, "|", t9, "|   |", t16, "|", t17, "|", t18, "|   |", t25, "|", t26, "|", t27, "|")
+print ("+-----------+   +--------------+   +--------------+")
+
+#Setting up the move variable (the valid moves that are possible)
+move = 0
+
+# Scoring System Variables
+p1score = 0
+p2score = 0
+
+# START
+
+while game == False:
+    
+    if game == False:
+        if p == True:
+            pturn = 1
+            print ("Game! Player ", pturn, "'s turn!")
+            print ("Scores  ", "Player 1, X: ", p1score, "AI, O: ", p2score)
+            move = int(input("Pick a tile."))
+        elif p == False:
+            pturn = 2
+            import random
+            if ((pturn == 2) and (boardcheck1 == True) and (boardcheck2 == True) and (boardcheck3 == True)):
+                move=random.randint(0, 28)
+                if (move == 1 and t1 != "X" and t1 != "O"):
+                    t1 = "O"
+                    p = not(p)
+                elif (move == 2 and t2 != "X" and t2 != "O"):
+                    t2 = "O"
+                    p = not(p)
+                elif (move == 3 and t3 != "X" and t3 != "O"):
+                    t3 = "O"
+                    p = not(p)
+                elif (move == 4 and t4 != "X" and t4 != "O"):
+                    t4 = "O"
+                    p = not(p)
+                elif (move == 5 and t5 != "X" and t5 != "O"):
+                    t5 = "O"
+                    p = not(p)
+                elif (move == 6 and t6 != "X" and t6 != "O"):
+                    t6 = "O"
+                    p = not(p)
+                elif (move == 7 and t7 != "X" and t7 != "O"):
+                    t7 = "O"
+                    p = not(p)
+                elif (move == 8 and t8 != "X" and t8 != "O"):
+                    t8 = "O"
+                    p = not(p)
+                elif (move == 9 and t9 != "X" and t9 != "O"):
+                    t9 = "O"
+                    p = not(p)
+                elif (move == 10 and t10 != " X" and t10 != " O"):
+                    t10 = "O"
+                    p = not(p)
+                elif (move == 11 and t11 != " X" and t11 != " O"):
+                    t11 = "O"
+                    p = not(p)
+                elif (move == 12 and t12 != " X" and t12 != " O"):
+                    t12 = "O"
+                    p = not(p)
+                elif (move == 13 and t13 != " X" and t13 != " O"):
+                    t13 = "O"
+                    p = not(p)
+                elif (move == 14 and t14 != " X" and t14 != " O"):
+                    t14 = "O"
+                    p = not(p)
+                elif (move == 15 and t15 != " X" and t15 != " O"):
+                    t15 = "O"
+                    p = not(p)
+                elif (move == 16 and t16 != " X" and t16 != " O"):
+                    t16 = "O"
+                    p = not(p)
+                elif (move == 17 and t17 != " X" and t17 != " O"):
+                    t17 = "O"
+                    p = not(p)
+                elif (move == 18 and t18 != " X" and t18 != " O"):
+                    t18 = "O"
+                    p = not(p)
+                elif (move == 19 and t19 != " X" and t19 != " O"):
+                    t19 = "O"
+                    p = not(p)
+                elif (move == 20 and t20 != " X" and t20 != " O"):
+                    t20 = "O"
+                    p = not(p)
+                elif (move == 21 and t21 != " X" and t21 != " O"):
+                    t21 = "O"
+                    p = not(p)
+                elif (move == 22 and t22 != " X" and t22 != " O"):
+                    t22 = "O"
+                    p = not(p)
+                elif (move == 23 and t23 != " X" and t23 != " O"):
+                    t23 = "O"
+                    p = not(p)
+                elif (move == 24 and t24 != " X" and t24 != " O"):
+                    t24 = "O"
+                    p = not(p)
+                elif (move == 25 and t25 != " X" and t25 != " O"):
+                    t25 = "O"
+                    p = not(p)
+                elif (move == 26 and t26 != " X" and t26 != " O"):
+                    t26 = "O"
+                    p = not(p)
+                elif (move == 27 and t27 != " X" and t27 != " O"):
+                    t27 = "O"
+                    p = not(p)
+            elif ((pturn == 2) and (boardcheck1 == False) and (boardcheck2 == True) and (boardcheck3 == True)):
+                move=random.randint(9, 28)
+                if (move == 10 and t10 != " X" and t10 != " O"):
+                    t10 = "O"
+                    p = not(p)
+                elif (move == 11 and t11 != " X" and t11 != " O"):
+                    t11 = "O"
+                    p = not(p)
+                elif (move == 12 and t12 != " X" and t12 != " O"):
+                    t12 = " "
+                    p = not(p)
+                elif (move == 13 and t13 != " X" and t13 != " O"):
+                    t13 = "O"
+                    p = not(p)
+                elif (move == 14 and t14 != " X" and t14 != " O"):
+                    t14 = "O"
+                    p = not(p)
+                elif (move == 15 and t15 != " X" and t15 != " O"):
+                    t15 = "O"
+                    p = not(p)
+                elif (move == 16 and t16 != " X" and t16 != " O"):
+                    t16 = "O"
+                    p = not(p)
+                elif (move == 17 and t17 != " X" and t17 != " O"):
+                    t17 = "O"
+                    p = not(p)
+                elif (move == 18 and t18 != " X" and t18 != " O"):
+                    t18 = "O"
+                    p = not(p)
+                elif (move == 19 and t19 != " X" and t19 != " O"):
+                    t19 = "O"
+                    p = not(p)
+                elif (move == 20 and t20 != " X" and t20 != " O"):
+                    t20 = "O"
+                    p = not(p)
+                elif (move == 21 and t21 != " X" and t21 != " O"):
+                    t21 = "O"
+                    p = not(p)
+                elif (move == 22 and t22 != " X" and t22 != " O"):
+                    t22 = "O"
+                    p = not(p)
+                elif (move == 23 and t23 != " X" and t23 != " O"):
+                    t23 = "O"
+                    p = not(p)
+                elif (move == 24 and t24 != " X" and t24 != " O"):
+                    t24 = "O"
+                    p = not(p)
+                elif (move == 25 and t25 != " X" and t25 != " O"):
+                    t25 = "O"
+                    p = not(p)
+                elif (move == 26 and t26 != " X" and t26 != " O"):
+                    t26 = "O"
+                    p = not(p)
+                elif (move == 27 and t27 != " X" and t27 != " O"):
+                    t27 = "O"
+                    p = not(p)
+            elif ((pturn == 2) and (boardcheck2 == False) and (boardcheck1 == True) and (boardcheck3 == True)):
+                move=random.randint(0, 10) and (18, 28)
+                if (move == 1 and t1 != "X" and t1 != "O"):
+                    t1 = "O"
+                    p = not(p)
+                elif (move == 2 and t2 != "X" and t2 != "O"):
+                    t2 = "O"
+                    p = not(p)
+                elif (move == 3 and t3 != "X" and t3 != "O"):
+                    t3 = "O"
+                    p = not(p)
+                elif (move == 4 and t4 != "X" and t4 != "O"):
+                    t4 = "O"
+                    p = not(p)
+                elif (move == 5 and t5 != "X" and t5 != "O"):
+                    t5 = "O"
+                    p = not(p)
+                elif (move == 6 and t6 != "X" and t6 != "O"):
+                    t6 = "O"
+                    p = not(p)
+                elif (move == 7 and t7 != "X" and t7 != "O"):
+                    t7 = "O"
+                    p = not(p)
+                elif (move == 8 and t8 != "X" and t8 != "O"):
+                    t8 = "O"
+                    p = not(p)
+                elif (move == 9 and t9 != "X" and t9 != "O"):
+                    t9 = "O"
+                    p = not(p)
+                elif (move == 19 and t19 != " X" and t19 != " O"):
+                    t19 = "O"
+                    p = not(p)
+                elif (move == 20 and t20 != " X" and t20 != " O"):
+                    t20 = "O"
+                    p = not(p)
+                elif (move == 21 and t21 != " X" and t21 != " O"):
+                    t21 = "O"
+                    p = not(p)
+                elif (move == 22 and t22 != " X" and t22 != " O"):
+                    t22 = "O"
+                    p = not(p)
+                elif (move == 23 and t23 != " X" and t23 != " O"):
+                    t23 = "O"
+                    p = not(p)
+                elif (move == 24 and t24 != " X" and t24 != " O"):
+                    t24 = "O"
+                    p = not(p)
+                elif (move == 25 and t25 != " X" and t25 != " O"):
+                    t25 = "O"
+                    p = not(p)
+                elif (move == 26 and t26 != " X" and t26 != " O"):
+                    t26 = "O"
+                    p = not(p)
+                elif (move == 27 and t27 != " X" and t27 != " O"):
+                    t27 = "O"
+                    p = not(p)
+            elif ((pturn == 2) and (boardcheck3 == False) and (boardcheck1 == True) and (boardcheck2 == True)):
+                move=random.randint(0, 19)
+                if (move == 1 and t1 != "X" and t1 != "O"):
+                    t1 = "O"
+                    p = not(p)
+                elif (move == 2 and t2 != "X" and t2 != "O"):
+                    t2 = "O"
+                    p = not(p)
+                elif (move == 3 and t3 != "X" and t3 != "O"):
+                    t3 = "O"
+                    p = not(p)
+                elif (move == 4 and t4 != "X" and t4 != "O"):
+                    t4 = "O"
+                    p = not(p)
+                elif (move == 5 and t5 != "X" and t5 != "O"):
+                    t5 = "O"
+                    p = not(p)
+                elif (move == 6 and t6 != "X" and t6 != "O"):
+                    t6 = "O"
+                    p = not(p)
+                elif (move == 7 and t7 != "X" and t7 != "O"):
+                    t7 = "O"
+                    p = not(p)
+                elif (move == 8 and t8 != "X" and t8 != "O"):
+                    t8 = "O"
+                    p = not(p)
+                elif (move == 9 and t9 != "X" and t9 != "O"):
+                    t9 = "O"
+                    p = not(p)
+                elif (move == 10 and t10 != " X" and t10 != " O"):
+                    t10 = "O"
+                    p = not(p)
+                elif (move == 11 and t11 != " X" and t11 != " O"):
+                    t11 = "O"
+                    p = not(p)
+                elif (move == 12 and t12 != " X" and t12 != " O"):
+                    t12 = "O"
+                    p = not(p)
+                elif (move == 13 and t13 != " X" and t13 != " O"):
+                    t13 = "O"
+                    p = not(p)
+                elif (move == 14 and t14 != " X" and t14 != " O"):
+                    t14 = "O"
+                    p = not(p)
+                elif (move == 15 and t15 != " X" and t15 != " O"):
+                    t15 = "O"
+                    p = not(p)
+                elif (move == 16 and t16 != " X" and t16 != " O"):
+                    t16 = "O"
+                    p = not(p)
+                elif (move == 17 and t17 != " X" and t17 != " O"):
+                    t17 = "O"
+                    p = not(p)
+                elif (move == 18 and t18 != " X" and t18 != " O"):
+                    t18 = "O"
+                    p = not(p)
+            elif ((pturn == 2) and (boardcheck1 == False) and (boardcheck2 == False)):
+                move=random.randint(18, 28)
+                if (move == 19 and t19 != " X" and t19 != " O"):
+                    t19 = "O"
+                    p = not(p)
+                elif (move == 20 and t20 != " X" and t20 != " O"):
+                    t20 = "O"
+                    p = not(p)
+                elif (move == 21 and t21 != " X" and t21 != " O"):
+                    t21 = "O"
+                    p = not(p)
+                elif (move == 22 and t22 != " X" and t22 != " O"):
+                    t22 = "O"
+                    p = not(p)
+                elif (move == 23 and t23 != " X" and t23 != " O"):
+                    t23 = "O"
+                    p = not(p)
+                elif (move == 24 and t24 != " X" and t24 != " O"):
+                    t24 = "O"
+                    p = not(p)
+                elif (move == 25 and t25 != " X" and t25 != " O"):
+                    t25 = "O"
+                    p = not(p)
+                elif (move == 26 and t26 != " X" and t26 != " O"):
+                    t26 = "O"
+                    p = not(p)
+                elif (move == 27 and t27 != " X" and t27 != " O"):
+                    t27 = "O"
+                    p = not(p)
+            elif ((pturn == 2) and (boardcheck2 == False) and (boardcheck3 == False)):
+                move=random.randint(0, 10)
+                if (move == 1 and t1 != "X" and t1 != "O"):
+                    t1 = "O"
+                    p = not(p)
+                elif (move == 2 and t2 != "X" and t2 != "O"):
+                    t2 = "O"
+                    p = not(p)
+                elif (move == 3 and t3 != "X" and t3 != "O"):
+                    t3 = "O"
+                    p = not(p)
+                elif (move == 4 and t4 != "X" and t4 != "O"):
+                    t4 = "O"
+                    p = not(p)
+                elif (move == 5 and t5 != "X" and t5 != "O"):
+                    t5 = "O"
+                    p = not(p)
+                elif (move == 6 and t6 != "X" and t6 != "O"):
+                    t6 = "O"
+                    p = not(p)
+                elif (move == 7 and t7 != "X" and t7 != "O"):
+                    t7 = "O"
+                    p = not(p)
+                elif (move == 8 and t8 != "X" and t8 != "O"):
+                    t8 = "O"
+                    p = not(p)
+                elif (move == 9 and t9 != "X" and t9 != "O"):
+                    t9 = "O"
+                    p = not(p)
+            elif ((pturn == 2) and (boardcheck1 == False) and (boardcheck3 == False)):
+                move=random.randint(9, 19)
+                if (move == 10 and t10 != " X" and t10 != " O"):
+                    t10 = "O"
+                    p = not(p)
+                elif (move == 11 and t11 != " X" and t11 != " O"):
+                    t11 = "O"
+                    p = not(p)
+                elif (move == 12 and t12 != " X" and t12 != " O"):
+                    t12 = "O"
+                    p = not(p)
+                elif (move == 13 and t13 != " X" and t13 != " O"):
+                    t13 = "O"
+                    p = not(p)
+                elif (move == 14 and t14 != " X" and t14 != " O"):
+                    t14 = "O"
+                    p = not(p)
+                elif (move == 15 and t15 != " X" and t15 != " O"):
+                    t15 = "O"
+                    p = not(p)
+                elif (move == 16 and t16 != " X" and t16 != " O"):
+                    t16 = "O"
+                    p = not(p)
+                elif (move == 17 and t17 != " X" and t17 != " O"):
+                    t17 = "O"
+                    p = not(p)
+                elif (move == 18 and t18 != " X" and t18 != " O"):
+                    t18 = "O"
+                    p = not(p)
+            print ("Scores  ", "Player 1, X: ", p1score, "AI, O: ", p2score)
+
+    if move > 0 and move < 28:
+
+# Player One's turn
+        if pturn == 1:
+            if (move == 1 and t1 != "X" and t1 != "O"):
+                t1 = "X"
+                p = not(p)
+            elif (move == 2 and t2 != "X" and t2 != "O"):
+                t2 = "X"
+                p = not(p)
+            elif (move == 3 and t3 != "X" and t3 != "O"):
+                t3 = "X"
+                p = not(p)
+            elif (move == 4 and t4 != "X" and t4 != "O"):
+                t4 = "X"
+                p = not(p)
+            elif (move == 5 and t5 != "X" and t5 != "O"):
+                t5 = "X"
+                p = not(p)
+            elif (move == 6 and t6 != "X" and t6 != "O"):
+                t6 = "X"
+                p = not(p)
+            elif (move == 7 and t7 != "X" and t7 != "O"):
+                t7 = "X"
+                p = not(p)
+            elif (move == 8 and t8 != "X" and t8 != "O"):
+                t8 = "X"
+                p = not(p)
+            elif (move == 9 and t9 != "X" and t9 != "O"):
+                t9 = "X"
+                p = not(p)
+            elif (move == 10 and t10 != " X" and t10 != " O"):
+                t10 = " X"
+                p = not(p)
+            elif (move == 11 and t11 != " X" and t11 != " O"):
+                t11 = " X"
+                p = not(p)
+            elif (move == 12 and t12 != " X" and t12 != " O"):
+                t12 = " X"
+                p = not(p)
+            elif (move == 13 and t13 != " X" and t13 != " O"):
+                t13 = " X"
+                p = not(p)
+            elif (move == 14 and t14 != " X" and t14 != " O"):
+                t14 = " X"
+                p = not(p)
+            elif (move == 15 and t15 != " X" and t15 != " O"):
+                t15 = " X"
+                p = not(p)
+            elif (move == 16 and t16 != " X" and t16 != " O"):
+                t16 = " X"
+                p = not(p)
+            elif (move == 17 and t17 != " X" and t17 != " O"):
+                t17 = " X"
+                p = not(p)
+            elif (move == 18 and t18 != " X" and t18 != " O"):
+                t18 = " X"
+                p = not(p)
+            elif (move == 19 and t19 != " X" and t19 != " O"):
+                t19 = " X"
+                p = not(p)
+            elif (move == 20 and t20 != " X" and t20 != " O"):
+                t20 = " X"
+                p = not(p)
+            elif (move == 21 and t21 != " X" and t21 != " O"):
+                t21 = " X"
+                p = not(p)
+            elif (move == 22 and t22 != " X" and t22 != " O"):
+                t22 = " X"
+                p = not(p)
+            elif (move == 23 and t23 != " X" and t23 != " O"):
+                t23 = " X"
+                p = not(p)
+            elif (move == 24 and t24 != " X" and t24 != " O"):
+                t24 = " X"
+                p = not(p)
+            elif (move == 25 and t25 != " X" and t25 != " O"):
+                t25 = " X"
+                p = not(p)
+            elif (move == 26 and t26 != " X" and t26 != " O"):
+                t26 = " X"
+                p = not(p)
+            elif (move == 27 and t27 != " X" and t27 != " O"):
+                t27 = " X"
+                p = not(p)
+            else:
+                print (" ")
+                print ("STOP RIGHT THERE! This is already taken, choose another.")
+
+
+# Locking Board One
+    if boardcheck1 == True:
+        if (
+            (t1 == "X" and t2 == "X" and t3 == "X") or
+            (t4 == "X" and t5 == "X" and t6 == "X") or
+            (t7 == "X" and t8 == "X" and t9 == "X") or
+            (t1 == "X" and t4 == "X" and t7 == "X") or
+            (t2 == "X" and t5 == "X" and t8 == "X") or
+            (t3 == "X" and t6 == "X" and t9 == "X") or
+            (t1 == "X" and t5 == "X" and t9 == "X") or
+            (t3 == "X" and t5 == "X" and t7 == "X")
+            ):
+            t1 = "X"
+            t2 = "X"
+            t3 = "X"
+            t4 = "X"
+            t5 = "X"
+            t6 = "X"
+            t7 = "X"
+            t8 = "X"
+            t9 = "X"
+            p = not(p)
+            boardcheck1 = False
+
+            if ((boardcheck1 == False) and (boardcheck2 == False) and (boardcheck3 == False)):
+                p1score += 1
+                print (" ")
+                print("__________.__                               ____   __      __.__               ")
+                print("\______   \  | _____  ___.__. ___________  /_   | /  \    /  \__| ____   ______")
+                print(" |     ___/  | \__  \<   |  |/ __ \_  __ \  |   | \   \/\/   /  |/    \ /  ___/")
+                print(" |    |   |  |__/ __ \ \___  \  __/|  | \/  |   |  \        /|  |   |  \\___ \ ")
+                print(" |____|   |____(____  / ____| \___ >__|     |___|   \__/\  / |__|___|  /____  >")
+                print("                    \/\/         \/                      \/          \/     \/ ")
+
+                print (" ")
+                print (" ")
+                print ("+-----------+   +--------------+   +--------------+")
+                print ("|", t1, "|", t2, "|", t3, "|   |", t10, "|", t11, "|", t12, "|   |", t19, "|", t20, "|", t21, "|" )
+                print ("+---+---+---+   +----+----+----+   +----+----+----+")
+                print ("|", t4, "|", t5, "|", t6, "|   |", t13, "|", t14, "|", t15, "|   |", t22, "|", t23, "|", t24, "|")
+                print ("+---+---+---+   +----+----+----+   +----+----+----+")
+                print ("|", t7, "|", t8, "|", t9, "|   |", t16, "|", t17, "|", t18, "|   |", t25, "|", t26, "|", t27, "|")
+                print ("+-----------+   +--------------+   +--------------+")
+                print (" ")
+        # Replay
+                replay = input("Play again? Input yes or no.")
+
+                if (replay == "no"):
+                    game = True
+                elif (replay == "yes"):
+                    t1,t2,t3,t4,t5,t6,t7,t8,t9 = [1,2,3,4,5,6,7,8,9]
+                    t10,t11,t12,t13,t14,t15,t16,t17,t18 = [10,11,12,13,14,15,16,17,18]
+                    t19,t20,t21,t22,t23,t24,t25,t26,t27 = [19,20,21,22,23,24,25,26,27]
+                    boardcheck1 = True
+                    boardcheck2 = True
+                    boardcheck3 = True
+                    p = True
+                else:
+                    print ("Oof not an option, this game will self-destruct in...")
+                    count=11
+                    while count>0:
+                        count=count-1
+                        print (count)
+                    print("Did you actually think it was going to explode? Ok.")
+                    game = True
+            else:
+                print (" ")
+                print ("* Player One wins Board 1! *")
+                print ("* Player One gets an extra turn *")
+        elif (
+            (t1 == "O" and t2 == "O" and t3 == "O") or
+            (t4 == "O" and t5 == "O" and t6 == "O") or
+            (t7 == "O" and t8 == "O" and t9 == "O") or
+            (t1 == "O" and t4 == "O" and t7 == "O") or
+            (t2 == "O" and t5 == "O" and t8 == "O") or
+            (t3 == "O" and t6 == "O" and t9 == "O") or
+            (t1 == "O" and t5 == "O" and t9 == "O") or
+            (t3 == "O" and t5 == "O" and t7 == "O")
+            ):
+            t1 = "O"
+            t2 = "O"
+            t3 = "O"
+            t4 = "O"
+            t5 = "O"
+            t6 = "O"
+            t7 = "O"
+            t8 = "O"
+            t9 = "O"
+            p = not(p)
+            boardcheck1 = False
+
+            if ((boardcheck1 == False) and (boardcheck2 == False) and (boardcheck3 == False)):
+                p2score += 1
+                print (" ")
+                print("__________.__                              ________    __      __.__")               
+                print("\______   \  | _____  ___.__. ___________  \_____  \  /  \    /  \__| ____   ______")
+                print(" |     ___/  | \__  \<   |  |/ __ \_  __ \  /  ____/  \   \/\/   /  |/    \ /  ___/")
+                print(" |    |   |  |__/ __ \\___   \  ___/|  | \/ /       \   \        /|  |   |  \\___ \ ")
+                print(" |____|   |____(____  / ____|\___  >__|    \_______ \   \__/\  / |__|___|  /____  >")
+                print("                    \/\/         \/                \/        \/          \/     \/")
+
+                print (" ")
+                print ("Score Board  ", "X: ", p1score, "O: ", p2score)
+                print (" ")
+                print ("+-----------+   +--------------+   +--------------+")
+                print ("|", t1, "|", t2, "|", t3, "|   |", t10, "|", t11, "|", t12, "|   |", t19, "|", t20, "|", t21, "|" )
+                print ("+---+---+---+   +----+----+----+   +----+----+----+")
+                print ("|", t4, "|", t5, "|", t6, "|   |", t13, "|", t14, "|", t15, "|   |", t22, "|", t23, "|", t24, "|")
+                print ("+---+---+---+   +----+----+----+   +----+----+----+")
+                print ("|", t7, "|", t8, "|", t9, "|   |", t16, "|", t17, "|", t18, "|   |", t25, "|", t26, "|", t27, "|")
+                print ("+-----------+   +--------------+   +--------------+")
+                print (" ")
+                replay = input("Play again? Input yes or no.")
+
+                if (replay == "no"):
+                    game = True
+                elif (replay == "yes"):
+                    t1,t2,t3,t4,t5,t6,t7,t8,t9 = [1,2,3,4,5,6,7,8,9]
+                    t10,t11,t12,t13,t14,t15,t16,t17,t18 = [10,11,12,13,14,15,16,17,18]
+                    t19,t20,t21,t22,t23,t24,t25,t26,t27 = [19,20,21,22,23,24,25,26,27]
+                    boardcheck1 = True
+                    boardcheck2 = True
+                    boardcheck3 = True
+                    p = True
+                else:
+                    print ("Oof not an option, this game will self-destruct in...")
+                    count=11
+                    while count>0:
+                        count=count-1
+                        print (count)
+                    print("Did you actually think it was going to explode? Ok.")
+                    game = True
+            else:
+                print (" ")
+                print ("* AI wins Board 1! *")
+                print ("* AI gets an extra turn *")
+
+# Locking Board Two
+    if boardcheck2 == True:
+        if (
+            (t10 == " X" and t11 == " X" and t12 == " X") or
+            (t13 == " X" and t14 == " X" and t15 == " X") or
+            (t16 == " X" and t17 == " X" and t18 == " X") or
+            (t10 == " X" and t13 == " X" and t16 == " X") or
+            (t11 == " X" and t14 == " X" and t17 == " X") or
+            (t12 == " X" and t15 == " X" and t18 == " X") or
+            (t10 == " X" and t14 == " X" and t18 == " X") or
+            (t12 == " X" and t14 == " X" and t16 == " X")
+            ):
+            t10 = " X"
+            t11 = " X"
+            t12 = " X"
+            t13 = " X"
+            t14 = " X"
+            t15 = " X"
+            t16 = " X"
+            t17 = " X"
+            t18 = " X"
+            p = not(p)
+            boardcheck2 = False
+
+            if ((boardcheck1 == False) and (boardcheck2 == False) and (boardcheck3 == False)):
+                p1score += 1
+                print (" ")
+                print("__________.__                               ____   __      __.__               ")
+                print("\______   \  | _____  ___.__. ___________  /_   | /  \    /  \__| ____   ______")
+                print(" |     ___/  | \__  \<   |  |/ __ \_  __ \  |   | \   \/\/   /  |/    \ /  ___/")
+                print(" |    |   |  |__/ __ \ \___  \  __/|  | \/  |   |  \        /|  |   |  \\___ \ ")
+                print(" |____|   |____(____  / ____| \___ >__|     |___|   \__/\  / |__|___|  /____  >")
+                print("                    \/\/         \/                      \/          \/     \/ ")
+
+                print (" ")
+                print ("Score Board  ", "X: ", p1score, "O: ", p2score)
+                print (" ")
+                print ("+-----------+   +--------------+   +--------------+")
+                print ("|", t1, "|", t2, "|", t3, "|   |", t10, "|", t11, "|", t12, "|   |", t19, "|", t20, "|", t21, "|" )
+                print ("+---+---+---+   +----+----+----+   +----+----+----+")
+                print ("|", t4, "|", t5, "|", t6, "|   |", t13, "|", t14, "|", t15, "|   |", t22, "|", t23, "|", t24, "|")
+                print ("+---+---+---+   +----+----+----+   +----+----+----+")
+                print ("|", t7, "|", t8, "|", t9, "|   |", t16, "|", t17, "|", t18, "|   |", t25, "|", t26, "|", t27, "|")
+                print ("+-----------+   +--------------+   +--------------+")
+                print (" ")
+                replay = input("Play again? Input yes or no.")
+
+                if (replay == "no"):
+                    game = True
+                elif (replay == "yes"):
+                    t1,t2,t3,t4,t5,t6,t7,t8,t9 = [1,2,3,4,5,6,7,8,9]
+                    t10,t11,t12,t13,t14,t15,t16,t17,t18 = [10,11,12,13,14,15,16,17,18]
+                    t19,t20,t21,t22,t23,t24,t25,t26,t27 = [19,20,21,22,23,24,25,26,27]
+                    boardcheck1 = True
+                    boardcheck2 = True
+                    boardcheck3 = True
+                    p = True
+                else:
+                    print ("Oof not an option, this game will self-destruct in...")
+                    count=11
+                    while count>0:
+                        count=count-1
+                        print (count)
+                    print("Did you actually think it was going to explode? Ok.")
+                    game = True
+            else:
+                print (" ")
+                print ("* Player One wins Board 2! *")
+                print ("* Player One gets an extra turn *")
+        elif (
+            (t10 == " O" and t11 == " O" and t12 == " O") or
+            (t13 == " O" and t14 == " O" and t15 == " O") or
+            (t16 == " O" and t17 == " O" and t18 == " O") or
+            (t10 == " O" and t13 == " O" and t16 == " O") or
+            (t11 == " O" and t14 == " O" and t17 == " O") or
+            (t12 == " O" and t15 == " O" and t18 == " O") or
+            (t10 == " O" and t14 == " O" and t18 == " O") or
+            (t12 == " O" and t14 == " O" and t16 == " O")
+            ):
+            t10 = " O"
+            t11 = " O"
+            t12 = " O"
+            t13 = " O"
+            t14 = " O"
+            t15 = " O"
+            t16 = " O"
+            t17 = " O"
+            t18 = " O"
+            p = not(p)
+            boardcheck2 = False
+
+            if ((boardcheck1 == False) and (boardcheck2 == False) and (boardcheck3 == False)):
+                p2score += 1
+                print (" ")
+                print("__________.__                              ________    __      __.__")               
+                print("\______   \  | _____  ___.__. ___________  \_____  \  /  \    /  \__| ____   ______")
+                print(" |     ___/  | \__  \<   |  |/ __ \_  __ \  /  ____/  \   \/\/   /  |/    \ /  ___/")
+                print(" |    |   |  |__/ __ \\___   \  ___/|  | \/ /       \   \        /|  |   |  \\___ \ ")
+                print(" |____|   |____(____  / ____|\___  >__|    \_______ \   \__/\  / |__|___|  /____  >")
+                print("                    \/\/         \/                \/        \/          \/     \/")
+
+                print (" ")
+                print ("Score Board  ", "X: ", p1score, "O: ", p2score)
+                print (" ")
+                print ("+-----------+   +--------------+   +--------------+")
+                print ("|", t1, "|", t2, "|", t3, "|   |", t10, "|", t11, "|", t12, "|   |", t19, "|", t20, "|", t21, "|" )
+                print ("+---+---+---+   +----+----+----+   +----+----+----+")
+                print ("|", t4, "|", t5, "|", t6, "|   |", t13, "|", t14, "|", t15, "|   |", t22, "|", t23, "|", t24, "|")
+                print ("+---+---+---+   +----+----+----+   +----+----+----+")
+                print ("|", t7, "|", t8, "|", t9, "|   |", t16, "|", t17, "|", t18, "|   |", t25, "|", t26, "|", t27, "|")
+                print ("+-----------+   +--------------+   +--------------+")
+                print (" ")
+                replay = input("Play again? Input yes or no.")
+
+                if (replay == "no"):
+                    game = True
+                elif (replay == "yes"):
+                    t1,t2,t3,t4,t5,t6,t7,t8,t9 = [1,2,3,4,5,6,7,8,9]
+                    t10,t11,t12,t13,t14,t15,t16,t17,t18 = [10,11,12,13,14,15,16,17,18]
+                    t19,t20,t21,t22,t23,t24,t25,t26,t27 = [19,20,21,22,23,24,25,26,27]
+                    boardcheck1 = True
+                    boardcheck2 = True
+                    boardcheck3 = True
+                    p = True
+                else:
+                    print ("Oof not an option, this game will self-destruct in...")
+                    count=11
+                    while count>0:
+                        count=count-1
+                        print (count)
+                    print("Did you actually think it was going to explode? Ok.")
+                    game = True
+            else:
+                print (" ")
+                print ("* AI wins Board 2! *")
+                print ("* AI gets an extra turn *")                  
+
+# Locking Board Three
+    if boardcheck3 == True:
+        if (
+            (t19 == " X" and t20 == " X" and t21 == " X") or
+            (t22 == " X" and t23 == " X" and t24 == " X") or
+            (t25 == " X" and t26 == " X" and t27 == " X") or
+            (t19 == " X" and t22 == " X" and t25 == " X") or
+            (t20 == " X" and t23 == " X" and t26 == " X") or
+            (t21 == " X" and t24 == " X" and t27 == " X") or
+            (t19 == " X" and t23 == " X" and t27 == " X") or
+            (t21 == " X" and t23 == " X" and t25 == " X")
+            ):
+            t19 = " X"
+            t20 = " X"
+            t21 = " X"
+            t22 = " X"
+            t23 = " X"
+            t24 = " X"
+            t25 = " X"
+            t26 = " X"
+            t27 = " X"
+            p = not(p)
+            boardcheck3 = False
+
+            if ((boardcheck1 == False) and (boardcheck2 == False) and (boardcheck3 == False)):
+                p1score += 1
+                print (" ")
+                print("__________.__                               ____   __      __.__               ")
+                print("\______   \  | _____  ___.__. ___________  /_   | /  \    /  \__| ____   ______")
+                print(" |     ___/  | \__  \<   |  |/ __ \_  __ \  |   | \   \/\/   /  |/    \ /  ___/")
+                print(" |    |   |  |__/ __ \ \___  \  __/|  | \/  |   |  \        /|  |   |  \\___ \ ")
+                print(" |____|   |____(____  / ____| \___ >__|     |___|   \__/\  / |__|___|  /____  >")
+                print("                    \/\/         \/                      \/          \/     \/ ")
+
+                print (" ")
+                print ("Score Board  ", "X: ", p1score, "O: ", p2score)
+                print (" ")
+                print ("+-----------+   +--------------+   +--------------+")
+                print ("|", t1, "|", t2, "|", t3, "|   |", t10, "|", t11, "|", t12, "|   |", t19, "|", t20, "|", t21, "|" )
+                print ("+---+---+---+   +----+----+----+   +----+----+----+")
+                print ("|", t4, "|", t5, "|", t6, "|   |", t13, "|", t14, "|", t15, "|   |", t22, "|", t23, "|", t24, "|")
+                print ("+---+---+---+   +----+----+----+   +----+----+----+")
+                print ("|", t7, "|", t8, "|", t9, "|   |", t16, "|", t17, "|", t18, "|   |", t25, "|", t26, "|", t27, "|")
+                print ("+-----------+   +--------------+   +--------------+")
+                print (" ")
+                replay = input("Play again? Input yes or no.")
+
+                if (replay == "no"):
+                    game = True
+                elif (replay == "yes"):
+                    t1,t2,t3,t4,t5,t6,t7,t8,t9 = [1,2,3,4,5,6,7,8,9]
+                    t10,t11,t12,t13,t14,t15,t16,t17,t18 = [10,11,12,13,14,15,16,17,18]
+                    t19,t20,t21,t22,t23,t24,t25,t26,t27 = [19,20,21,22,23,24,25,26,27]
+                    boardcheck1 = True
+                    boardcheck2 = True
+                    boardcheck3 = True
+                    p = True
+                else:
+                    print ("Oof not an option, this game will self-destruct in...")
+                    count=11
+                    while count>0:
+                        count=count-1
+                        print (count)
+                    print("Did you actually think it was going to explode? Ok.")
+                    game = True
+            else:
+                print (" ")
+                print ("* Player One wins Board 3! *")
+                print ("* Player One gets an extra turn *")
+        elif (
+            (t19 == " O" and t20 == " O" and t21 == " O") or
+            (t22 == " O" and t23 == " O" and t24 == " O") or
+            (t25 == " O" and t26 == " O" and t27 == " O") or
+            (t19 == " O" and t22 == " O" and t25 == " O") or
+            (t20 == " O" and t23 == " O" and t26 == " O") or
+            (t21 == " O" and t24 == " O" and t27 == " O") or
+            (t19 == " O" and t23 == " O" and t27 == " O") or
+            (t21 == " O" and t23 == " O" and t25 == " O")
+            ):
+            t19 = " O"
+            t20 = " O"
+            t21 = " O"
+            t22 = " O"
+            t23 = " O"
+            t24 = " O"
+            t25 = " O"
+            t26 = " O"
+            t27 = " O"
+            p = not(p)
+            boardcheck3 = False
+
+            if ((boardcheck1 == False) and (boardcheck2 == False) and (boardcheck3 == False)):
+                p2score += 1
+                print (" ")
+                print("__________.__                              ________    __      __.__")               
+                print("\______   \  | _____  ___.__. ___________  \_____  \  /  \    /  \__| ____   ______")
+                print(" |     ___/  | \__  \<   |  |/ __ \_  __ \  /  ____/  \   \/\/   /  |/    \ /  ___/")
+                print(" |    |   |  |__/ __ \\___   \  ___/|  | \/ /       \   \        /|  |   |  \\___ \ ")
+                print(" |____|   |____(____  / ____|\___  >__|    \_______ \   \__/\  / |__|___|  /____  >")
+                print("                    \/\/         \/                \/        \/          \/     \/")
+
+                print (" ")
+                print ("Score Board  ", "X: ", p1score, "O: ", p2score)
+                print (" ")
+                print ("+-----------+   +--------------+   +--------------+")
+                print ("|", t1, "|", t2, "|", t3, "|   |", t10, "|", t11, "|", t12, "|   |", t19, "|", t20, "|", t21, "|" )
+                print ("+---+---+---+   +----+----+----+   +----+----+----+")
+                print ("|", t4, "|", t5, "|", t6, "|   |", t13, "|", t14, "|", t15, "|   |", t22, "|", t23, "|", t24, "|")
+                print ("+---+---+---+   +----+----+----+   +----+----+----+")
+                print ("|", t7, "|", t8, "|", t9, "|   |", t16, "|", t17, "|", t18, "|   |", t25, "|", t26, "|", t27, "|")
+                print ("+-----------+   +--------------+   +--------------+")
+                print (" ")
+                replay = input("Play again? Input yes or no.")
+
+                if (replay == "no"):
+                    game = True
+                elif (replay == "yes"):
+                    t1,t2,t3,t4,t5,t6,t7,t8,t9 = [1,2,3,4,5,6,7,8,9]
+                    t10,t11,t12,t13,t14,t15,t16,t17,t18 = [10,11,12,13,14,15,16,17,18]
+                    t19,t20,t21,t22,t23,t24,t25,t26,t27 = [19,20,21,22,23,24,25,26,27]
+                    boardcheck1 = True
+                    boardcheck2 = True
+                    boardcheck3 = True
+                    p = True
+                else:
+                    print ("Oof not an option, this game will self-destruct in...")
+                    count=11
+                    while count>0:
+                        count=count-1
+                        print (count)
+                    print("Did you actually think it was going to explode? Ok.")
+                    game = True
+            else:
+                print (" ")
+                print ("* AI wins Board 3! *")
+                print ("* AI gets an extra turn *")
+
+# Draw
+    if (
+        (
+            t1 != 1 and t2 != 2 and t3 != 3 and
+            t4 != 4 and t5 != 5 and t6 != 6 and
+            t7 != 7 and t8 != 8 and t9 != 9 and
+            t10 != 10 and t11 != 11 and t12 != 12 and
+            t13 != 13 and t14 != 14 and t15 != 15 and
+            t16 != 16 and t17 != 17 and t18 != 18 and
+            t19 != 19 and t20 != 20 and t21 != 21 and
+            t22 != 22 and t23 != 23 and t24 != 24 and
+            t25 != 25 and t26 != 26 and t27 != 27
+            ) and
+        (game == False)
+        ):
+        print (" ")
+        print(".___  __ /\                     .___                     ")
+        print("|   |/  |)/ ______ _____      __| _/___________ __  _  __")
+        print("|   \   __\/  ___/ \__  \    / __ |\_  __ \__  \\ \/ \/ /")
+        print("|   ||  |  \___ \   / __ \_ / /_/ | |  | \// __ \\     / ")
+        print("|___||__| /____  > (____  / \____ | |__|  (____ /\/\_/  ")
+        print("               \/       \/       \/            \/        ")
+
+        print (" ")
+
+# Replay
+        replay = input("Play again? Input yes or no.")
+
+        if (replay == "no"):
+            game = True
+        elif (replay == "yes"):
+            t1,t2,t3,t4,t5,t6,t7,t8,t9 = [1,2,3,4,5,6,7,8,9]
+            t10,t11,t12,t13,t14,t15,t16,t17,t18 = [10,11,12,13,14,15,16,17,18]
+            t19,t20,t21,t22,t23,t24,t25,t26,t27 = [19,20,21,22,23,24,25,26,27]
+            boardcheck1 = True
+            boardcheck2 = True
+            boardcheck3 = True
+            p = True
+        else:
+            print ("Oof not an option, this game will self-destruct in...")
+            count=11
+            while count>0:
+                count=count-1
+                print (count)
+            print("Did you actually think it was going to explode? Ok.")    
+            game = True
+
+#Reprinting the board after each turn
+    if game == False:
+        print (" ")
+        print (" ")
+        print ("+-----------+   +--------------+   +--------------+")
+        print ("|", t1, "|", t2, "|", t3, "|   |", t10, "|", t11, "|", t12, "|   |", t19, "|", t20, "|", t21, "|" )
+        print ("+---+---+---+   +----+----+----+   +----+----+----+")
+        print ("|", t4, "|", t5, "|", t6, "|   |", t13, "|", t14, "|", t15, "|   |", t22, "|", t23, "|", t24, "|")
+        print ("+---+---+---+   +----+----+----+   +----+----+----+")
+        print ("|", t7, "|", t8, "|", t9, "|   |", t16, "|", t17, "|", t18, "|   |", t25, "|", t26, "|", t27, "|")
+        print ("+-----------+   +--------------+   +--------------+")
+
+print ("Game Over! Thank you for playing!")
