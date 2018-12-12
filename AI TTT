@@ -53,7 +53,7 @@ while game == False:
             pturn = 2
             import random
             if ((pturn == 2) and (boardcheck1 == True) and (boardcheck2 == True) and (boardcheck3 == True)):
-                move=random.randint(0, 28)
+                move=random.randint(1, 27)
                 if (move == 1 and t1 != "X" and t1 != "O"):
                     t1 = "O"
                     p = not(p)
@@ -136,7 +136,7 @@ while game == False:
                     t27 = " O"
                     p = not(p)
             elif ((pturn == 2) and (boardcheck1 == False) and (boardcheck2 == True) and (boardcheck3 == True)):
-                move=random.randint(9, 28)
+                move=random.randint(10, 27)
                 if (move == 10 and t10 != " X" and t10 != " O"):
                     t10 = " O"
                     p = not(p)
@@ -192,7 +192,7 @@ while game == False:
                     t27 = " O"
                     p = not(p)
             elif ((pturn == 2) and (boardcheck2 == False) and (boardcheck1 == True) and (boardcheck3 == True)):
-                move=random.randint(0, 10) and (18, 28)
+                move=random.randint(1, 9) and (19, 27)
                 if (move == 1 and t1 != "X" and t1 != "O"):
                     t1 = "O"
                     p = not(p)
@@ -248,7 +248,7 @@ while game == False:
                     t27 = " O"
                     p = not(p)
             elif ((pturn == 2) and (boardcheck3 == False) and (boardcheck1 == True) and (boardcheck2 == True)):
-                move=random.randint(0, 19)
+                move=random.randint(1, 18)
                 if (move == 1 and t1 != "X" and t1 != "O"):
                     t1 = "O"
                     p = not(p)
@@ -304,7 +304,7 @@ while game == False:
                     t18 = " O"
                     p = not(p)
             elif ((pturn == 2) and (boardcheck1 == False) and (boardcheck2 == False)):
-                move=random.randint(18, 28)
+                move=random.randint(19, 27)
                 if (move == 19 and t19 != " X" and t19 != " O"):
                     t19 = " O"
                     p = not(p)
@@ -333,7 +333,7 @@ while game == False:
                     t27 = " O"
                     p = not(p)
             elif ((pturn == 2) and (boardcheck2 == False) and (boardcheck3 == False)):
-                move=random.randint(0, 10)
+                move=random.randint(1, 9)
                 if (move == 1 and t1 != "X" and t1 != "O"):
                     t1 = "O"
                     p = not(p)
@@ -362,7 +362,7 @@ while game == False:
                     t9 = "O"
                     p = not(p)
             elif ((pturn == 2) and (boardcheck1 == False) and (boardcheck3 == False)):
-                move=random.randint(9, 19)
+                move=random.randint(10, 18)
                 if (move == 10 and t10 != " X" and t10 != " O"):
                     t10 = " O"
                     p = not(p)
