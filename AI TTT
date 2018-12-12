@@ -82,114 +82,114 @@ while game == False:
                     t9 = "O"
                     p = not(p)
                 elif (move == 10 and t10 != " X" and t10 != " O"):
-                    t10 = "O"
+                    t10 = " O"
                     p = not(p)
                 elif (move == 11 and t11 != " X" and t11 != " O"):
-                    t11 = "O"
+                    t11 = " O"
                     p = not(p)
                 elif (move == 12 and t12 != " X" and t12 != " O"):
-                    t12 = "O"
+                    t12 = " O"
                     p = not(p)
                 elif (move == 13 and t13 != " X" and t13 != " O"):
-                    t13 = "O"
+                    t13 = " O"
                     p = not(p)
                 elif (move == 14 and t14 != " X" and t14 != " O"):
-                    t14 = "O"
+                    t14 = " O"
                     p = not(p)
                 elif (move == 15 and t15 != " X" and t15 != " O"):
-                    t15 = "O"
+                    t15 = " O"
                     p = not(p)
                 elif (move == 16 and t16 != " X" and t16 != " O"):
-                    t16 = "O"
+                    t16 = " O"
                     p = not(p)
                 elif (move == 17 and t17 != " X" and t17 != " O"):
-                    t17 = "O"
+                    t17 = " O"
                     p = not(p)
                 elif (move == 18 and t18 != " X" and t18 != " O"):
-                    t18 = "O"
+                    t18 = " O"
                     p = not(p)
                 elif (move == 19 and t19 != " X" and t19 != " O"):
-                    t19 = "O"
+                    t19 = " O"
                     p = not(p)
                 elif (move == 20 and t20 != " X" and t20 != " O"):
-                    t20 = "O"
+                    t20 = " O"
                     p = not(p)
                 elif (move == 21 and t21 != " X" and t21 != " O"):
-                    t21 = "O"
+                    t21 = " O"
                     p = not(p)
                 elif (move == 22 and t22 != " X" and t22 != " O"):
-                    t22 = "O"
+                    t22 = " O"
                     p = not(p)
                 elif (move == 23 and t23 != " X" and t23 != " O"):
-                    t23 = "O"
+                    t23 = " O"
                     p = not(p)
                 elif (move == 24 and t24 != " X" and t24 != " O"):
-                    t24 = "O"
+                    t24 = " O"
                     p = not(p)
                 elif (move == 25 and t25 != " X" and t25 != " O"):
-                    t25 = "O"
+                    t25 = " O"
                     p = not(p)
                 elif (move == 26 and t26 != " X" and t26 != " O"):
-                    t26 = "O"
+                    t26 = " O"
                     p = not(p)
                 elif (move == 27 and t27 != " X" and t27 != " O"):
-                    t27 = "O"
+                    t27 = " O"
                     p = not(p)
             elif ((pturn == 2) and (boardcheck1 == False) and (boardcheck2 == True) and (boardcheck3 == True)):
                 move=random.randint(9, 28)
                 if (move == 10 and t10 != " X" and t10 != " O"):
-                    t10 = "O"
+                    t10 = " O"
                     p = not(p)
                 elif (move == 11 and t11 != " X" and t11 != " O"):
-                    t11 = "O"
+                    t11 = " O"
                     p = not(p)
                 elif (move == 12 and t12 != " X" and t12 != " O"):
-                    t12 = " "
+                    t12 = " O"
                     p = not(p)
                 elif (move == 13 and t13 != " X" and t13 != " O"):
-                    t13 = "O"
+                    t13 = " O"
                     p = not(p)
                 elif (move == 14 and t14 != " X" and t14 != " O"):
-                    t14 = "O"
+                    t14 = " O"
                     p = not(p)
                 elif (move == 15 and t15 != " X" and t15 != " O"):
-                    t15 = "O"
+                    t15 = " O"
                     p = not(p)
                 elif (move == 16 and t16 != " X" and t16 != " O"):
-                    t16 = "O"
+                    t16 = " O"
                     p = not(p)
                 elif (move == 17 and t17 != " X" and t17 != " O"):
-                    t17 = "O"
+                    t17 = " O"
                     p = not(p)
                 elif (move == 18 and t18 != " X" and t18 != " O"):
-                    t18 = "O"
+                    t18 = " O"
                     p = not(p)
                 elif (move == 19 and t19 != " X" and t19 != " O"):
-                    t19 = "O"
+                    t19 = " O"
                     p = not(p)
                 elif (move == 20 and t20 != " X" and t20 != " O"):
-                    t20 = "O"
+                    t20 = " O"
                     p = not(p)
                 elif (move == 21 and t21 != " X" and t21 != " O"):
-                    t21 = "O"
+                    t21 = " O"
                     p = not(p)
                 elif (move == 22 and t22 != " X" and t22 != " O"):
-                    t22 = "O"
+                    t22 = " O"
                     p = not(p)
                 elif (move == 23 and t23 != " X" and t23 != " O"):
-                    t23 = "O"
+                    t23 = " O"
                     p = not(p)
                 elif (move == 24 and t24 != " X" and t24 != " O"):
-                    t24 = "O"
+                    t24 = " O"
                     p = not(p)
                 elif (move == 25 and t25 != " X" and t25 != " O"):
-                    t25 = "O"
+                    t25 = " O"
                     p = not(p)
                 elif (move == 26 and t26 != " X" and t26 != " O"):
-                    t26 = "O"
+                    t26 = " O"
                     p = not(p)
                 elif (move == 27 and t27 != " X" and t27 != " O"):
-                    t27 = "O"
+                    t27 = " O"
                     p = not(p)
             elif ((pturn == 2) and (boardcheck2 == False) and (boardcheck1 == True) and (boardcheck3 == True)):
                 move=random.randint(0, 10) and (18, 28)
@@ -221,31 +221,31 @@ while game == False:
                     t9 = "O"
                     p = not(p)
                 elif (move == 19 and t19 != " X" and t19 != " O"):
-                    t19 = "O"
+                    t19 = " O"
                     p = not(p)
                 elif (move == 20 and t20 != " X" and t20 != " O"):
-                    t20 = "O"
+                    t20 = " O"
                     p = not(p)
                 elif (move == 21 and t21 != " X" and t21 != " O"):
-                    t21 = "O"
+                    t21 = " O"
                     p = not(p)
                 elif (move == 22 and t22 != " X" and t22 != " O"):
-                    t22 = "O"
+                    t22 = " O"
                     p = not(p)
                 elif (move == 23 and t23 != " X" and t23 != " O"):
-                    t23 = "O"
+                    t23 = " O"
                     p = not(p)
                 elif (move == 24 and t24 != " X" and t24 != " O"):
-                    t24 = "O"
+                    t24 = " O"
                     p = not(p)
                 elif (move == 25 and t25 != " X" and t25 != " O"):
-                    t25 = "O"
+                    t25 = " O"
                     p = not(p)
                 elif (move == 26 and t26 != " X" and t26 != " O"):
-                    t26 = "O"
+                    t26 = " O"
                     p = not(p)
                 elif (move == 27 and t27 != " X" and t27 != " O"):
-                    t27 = "O"
+                    t27 = " O"
                     p = not(p)
             elif ((pturn == 2) and (boardcheck3 == False) and (boardcheck1 == True) and (boardcheck2 == True)):
                 move=random.randint(0, 19)
@@ -253,84 +253,84 @@ while game == False:
                     t1 = "O"
                     p = not(p)
                 elif (move == 2 and t2 != "X" and t2 != "O"):
-                    t2 = "O"
+                    t2 = " O"
                     p = not(p)
                 elif (move == 3 and t3 != "X" and t3 != "O"):
-                    t3 = "O"
+                    t3 = " O"
                     p = not(p)
                 elif (move == 4 and t4 != "X" and t4 != "O"):
-                    t4 = "O"
+                    t4 = " O"
                     p = not(p)
                 elif (move == 5 and t5 != "X" and t5 != "O"):
-                    t5 = "O"
+                    t5 = " O"
                     p = not(p)
                 elif (move == 6 and t6 != "X" and t6 != "O"):
-                    t6 = "O"
+                    t6 = " O"
                     p = not(p)
                 elif (move == 7 and t7 != "X" and t7 != "O"):
-                    t7 = "O"
+                    t7 = " O"
                     p = not(p)
                 elif (move == 8 and t8 != "X" and t8 != "O"):
-                    t8 = "O"
+                    t8 = " O"
                     p = not(p)
                 elif (move == 9 and t9 != "X" and t9 != "O"):
-                    t9 = "O"
+                    t9 = " O"
                     p = not(p)
                 elif (move == 10 and t10 != " X" and t10 != " O"):
-                    t10 = "O"
+                    t10 = " O"
                     p = not(p)
                 elif (move == 11 and t11 != " X" and t11 != " O"):
                     t11 = "O"
                     p = not(p)
                 elif (move == 12 and t12 != " X" and t12 != " O"):
-                    t12 = "O"
+                    t12 = " O"
                     p = not(p)
                 elif (move == 13 and t13 != " X" and t13 != " O"):
-                    t13 = "O"
+                    t13 = " O"
                     p = not(p)
                 elif (move == 14 and t14 != " X" and t14 != " O"):
-                    t14 = "O"
+                    t14 = " O"
                     p = not(p)
                 elif (move == 15 and t15 != " X" and t15 != " O"):
-                    t15 = "O"
+                    t15 = " O"
                     p = not(p)
                 elif (move == 16 and t16 != " X" and t16 != " O"):
-                    t16 = "O"
+                    t16 = " O"
                     p = not(p)
                 elif (move == 17 and t17 != " X" and t17 != " O"):
-                    t17 = "O"
+                    t17 = " O"
                     p = not(p)
                 elif (move == 18 and t18 != " X" and t18 != " O"):
-                    t18 = "O"
+                    t18 = " O"
                     p = not(p)
             elif ((pturn == 2) and (boardcheck1 == False) and (boardcheck2 == False)):
                 move=random.randint(18, 28)
                 if (move == 19 and t19 != " X" and t19 != " O"):
-                    t19 = "O"
+                    t19 = " O"
                     p = not(p)
                 elif (move == 20 and t20 != " X" and t20 != " O"):
-                    t20 = "O"
+                    t20 = " O"
                     p = not(p)
                 elif (move == 21 and t21 != " X" and t21 != " O"):
-                    t21 = "O"
+                    t21 = " O"
                     p = not(p)
                 elif (move == 22 and t22 != " X" and t22 != " O"):
-                    t22 = "O"
+                    t22 = " O"
                     p = not(p)
                 elif (move == 23 and t23 != " X" and t23 != " O"):
-                    t23 = "O"
+                    t23 = " O"
                     p = not(p)
                 elif (move == 24 and t24 != " X" and t24 != " O"):
-                    t24 = "O"
+                    t24 = " O"
                     p = not(p)
                 elif (move == 25 and t25 != " X" and t25 != " O"):
-                    t25 = "O"
+                    t25 = " O"
                     p = not(p)
                 elif (move == 26 and t26 != " X" and t26 != " O"):
-                    t26 = "O"
+                    t26 = " O"
                     p = not(p)
                 elif (move == 27 and t27 != " X" and t27 != " O"):
-                    t27 = "O"
+                    t27 = " O"
                     p = not(p)
             elif ((pturn == 2) and (boardcheck2 == False) and (boardcheck3 == False)):
                 move=random.randint(0, 10)
@@ -364,31 +364,31 @@ while game == False:
             elif ((pturn == 2) and (boardcheck1 == False) and (boardcheck3 == False)):
                 move=random.randint(9, 19)
                 if (move == 10 and t10 != " X" and t10 != " O"):
-                    t10 = "O"
+                    t10 = " O"
                     p = not(p)
                 elif (move == 11 and t11 != " X" and t11 != " O"):
-                    t11 = "O"
+                    t11 = " O"
                     p = not(p)
                 elif (move == 12 and t12 != " X" and t12 != " O"):
-                    t12 = "O"
+                    t12 = " O"
                     p = not(p)
                 elif (move == 13 and t13 != " X" and t13 != " O"):
-                    t13 = "O"
+                    t13 = " O"
                     p = not(p)
                 elif (move == 14 and t14 != " X" and t14 != " O"):
-                    t14 = "O"
+                    t14 = " O"
                     p = not(p)
                 elif (move == 15 and t15 != " X" and t15 != " O"):
-                    t15 = "O"
+                    t15 = " O"
                     p = not(p)
                 elif (move == 16 and t16 != " X" and t16 != " O"):
-                    t16 = "O"
+                    t16 = " O"
                     p = not(p)
                 elif (move == 17 and t17 != " X" and t17 != " O"):
-                    t17 = "O"
+                    t17 = " O"
                     p = not(p)
                 elif (move == 18 and t18 != " X" and t18 != " O"):
-                    t18 = "O"
+                    t18 = " O"
                     p = not(p)
             print ("Scores  ", "Player 1, X: ", p1score, "AI, O: ", p2score)
 
