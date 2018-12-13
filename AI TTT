@@ -45,7 +45,7 @@ while game == False:
     if game == False:
         if p == True:
             pturn = 1
-            print ("Game! Player ", pturn, "'s turn!")
+            print ("Start! Player ", pturn, "'s turn!")
             print ("Scores  ", "Player 1, X: ", p1score, "AI, O: ", aiscore)
             move = int(input("Pick a tile."))
             if move > 0 and move < 28:
