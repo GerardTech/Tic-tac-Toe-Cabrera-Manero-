@@ -37,18 +37,103 @@ move = 0
 
 # Scoring System Variables
 p1score = 0
-p2score = 0
+aiscore = 0
 
-# START
+# START (Move Conditions for Player and AI)
 
 while game == False:
-    
     if game == False:
         if p == True:
             pturn = 1
             print ("Game! Player ", pturn, "'s turn!")
-            print ("Scores  ", "Player 1, X: ", p1score, "AI, O: ", p2score)
+            print ("Scores  ", "Player 1, X: ", p1score, "AI, O: ", aiscore)
             move = int(input("Pick a tile."))
+            if move > 0 and move < 28:
+                if pturn == 1:
+                    if (move == 1 and t1 != "X" and t1 != "O"):
+                        t1 = "X"
+                        p = not(p)
+                    elif (move == 2 and t2 != "X" and t2 != "O"):
+                        t2 = "X"
+                        p = not(p)
+                    elif (move == 3 and t3 != "X" and t3 != "O"):
+                        t3 = "X"
+                        p = not(p)
+                    elif (move == 4 and t4 != "X" and t4 != "O"):
+                        t4 = "X"
+                        p = not(p)
+                    elif (move == 5 and t5 != "X" and t5 != "O"):
+                        t5 = "X"
+                        p = not(p)
+                    elif (move == 6 and t6 != "X" and t6 != "O"):
+                        t6 = "X"
+                        p = not(p)
+                    elif (move == 7 and t7 != "X" and t7 != "O"):
+                        t7 = "X"
+                        p = not(p)
+                    elif (move == 8 and t8 != "X" and t8 != "O"):
+                        t8 = "X"
+                        p = not(p)
+                    elif (move == 9 and t9 != "X" and t9 != "O"):
+                        t9 = "X"
+                        p = not(p)
+                    elif (move == 10 and t10 != " X" and t10 != " O"):
+                        t10 = " X"
+                        p = not(p)
+                    elif (move == 11 and t11 != " X" and t11 != " O"):
+                        t11 = " X"
+                        p = not(p)
+                    elif (move == 12 and t12 != " X" and t12 != " O"):
+                        t12 = " X"
+                        p = not(p)
+                    elif (move == 13 and t13 != " X" and t13 != " O"):
+                        t13 = " X"
+                        p = not(p)
+                    elif (move == 14 and t14 != " X" and t14 != " O"):
+                        t14 = " X"
+                        p = not(p)
+                    elif (move == 15 and t15 != " X" and t15 != " O"):
+                        t15 = " X"
+                        p = not(p)
+                    elif (move == 16 and t16 != " X" and t16 != " O"):
+                        t16 = " X"
+                        p = not(p)
+                    elif (move == 17 and t17 != " X" and t17 != " O"):
+                        t17 = " X"
+                        p = not(p)
+                    elif (move == 18 and t18 != " X" and t18 != " O"):
+                        t18 = " X"
+                        p = not(p)
+                    elif (move == 19 and t19 != " X" and t19 != " O"):
+                        t19 = " X"
+                        p = not(p)
+                    elif (move == 20 and t20 != " X" and t20 != " O"):
+                        t20 = " X"
+                        p = not(p)
+                    elif (move == 21 and t21 != " X" and t21 != " O"):
+                        t21 = " X"
+                        p = not(p)
+                    elif (move == 22 and t22 != " X" and t22 != " O"):
+                        t22 = " X"
+                        p = not(p)
+                    elif (move == 23 and t23 != " X" and t23 != " O"):
+                        t23 = " X"
+                        p = not(p)
+                    elif (move == 24 and t24 != " X" and t24 != " O"):
+                        t24 = " X"
+                        p = not(p)
+                    elif (move == 25 and t25 != " X" and t25 != " O"):
+                        t25 = " X"
+                        p = not(p)
+                    elif (move == 26 and t26 != " X" and t26 != " O"):
+                        t26 = " X"
+                        p = not(p)
+                    elif (move == 27 and t27 != " X" and t27 != " O"):
+                        t27 = " X"
+                        p = not(p)
+                    else:
+                        print (" ")
+                        print ("STOP RIGHT THERE! This is already taken, choose another.")
         elif p == False:
             pturn = 2
             import random
@@ -390,97 +475,7 @@ while game == False:
                 elif (move == 18 and t18 != " X" and t18 != " O"):
                     t18 = " O"
                     p = not(p)
-            print ("Scores  ", "Player 1, X: ", p1score, "AI, O: ", p2score)
-
-    if move > 0 and move < 28:
-
-# Player One's turn
-        if pturn == 1:
-            if (move == 1 and t1 != "X" and t1 != "O"):
-                t1 = "X"
-                p = not(p)
-            elif (move == 2 and t2 != "X" and t2 != "O"):
-                t2 = "X"
-                p = not(p)
-            elif (move == 3 and t3 != "X" and t3 != "O"):
-                t3 = "X"
-                p = not(p)
-            elif (move == 4 and t4 != "X" and t4 != "O"):
-                t4 = "X"
-                p = not(p)
-            elif (move == 5 and t5 != "X" and t5 != "O"):
-                t5 = "X"
-                p = not(p)
-            elif (move == 6 and t6 != "X" and t6 != "O"):
-                t6 = "X"
-                p = not(p)
-            elif (move == 7 and t7 != "X" and t7 != "O"):
-                t7 = "X"
-                p = not(p)
-            elif (move == 8 and t8 != "X" and t8 != "O"):
-                t8 = "X"
-                p = not(p)
-            elif (move == 9 and t9 != "X" and t9 != "O"):
-                t9 = "X"
-                p = not(p)
-            elif (move == 10 and t10 != " X" and t10 != " O"):
-                t10 = " X"
-                p = not(p)
-            elif (move == 11 and t11 != " X" and t11 != " O"):
-                t11 = " X"
-                p = not(p)
-            elif (move == 12 and t12 != " X" and t12 != " O"):
-                t12 = " X"
-                p = not(p)
-            elif (move == 13 and t13 != " X" and t13 != " O"):
-                t13 = " X"
-                p = not(p)
-            elif (move == 14 and t14 != " X" and t14 != " O"):
-                t14 = " X"
-                p = not(p)
-            elif (move == 15 and t15 != " X" and t15 != " O"):
-                t15 = " X"
-                p = not(p)
-            elif (move == 16 and t16 != " X" and t16 != " O"):
-                t16 = " X"
-                p = not(p)
-            elif (move == 17 and t17 != " X" and t17 != " O"):
-                t17 = " X"
-                p = not(p)
-            elif (move == 18 and t18 != " X" and t18 != " O"):
-                t18 = " X"
-                p = not(p)
-            elif (move == 19 and t19 != " X" and t19 != " O"):
-                t19 = " X"
-                p = not(p)
-            elif (move == 20 and t20 != " X" and t20 != " O"):
-                t20 = " X"
-                p = not(p)
-            elif (move == 21 and t21 != " X" and t21 != " O"):
-                t21 = " X"
-                p = not(p)
-            elif (move == 22 and t22 != " X" and t22 != " O"):
-                t22 = " X"
-                p = not(p)
-            elif (move == 23 and t23 != " X" and t23 != " O"):
-                t23 = " X"
-                p = not(p)
-            elif (move == 24 and t24 != " X" and t24 != " O"):
-                t24 = " X"
-                p = not(p)
-            elif (move == 25 and t25 != " X" and t25 != " O"):
-                t25 = " X"
-                p = not(p)
-            elif (move == 26 and t26 != " X" and t26 != " O"):
-                t26 = " X"
-                p = not(p)
-            elif (move == 27 and t27 != " X" and t27 != " O"):
-                t27 = " X"
-                p = not(p)
-            else:
-                print (" ")
-                print ("STOP RIGHT THERE! This is already taken, choose another.")
-
+            print ("Scores  ", "Player 1, X: ", p1score, "AI, O: ", aiscore)
 
 # Locking Board One
     if boardcheck1 == True:
@@ -574,7 +569,7 @@ while game == False:
             boardcheck1 = False
 
             if ((boardcheck1 == False) and (boardcheck2 == False) and (boardcheck3 == False)):
-                p2score += 1
+                aiscore += 1
                 print (" ")
                 print(" █████╗ ██╗    ██╗    ██╗██╗███╗   ██╗███████╗")
                 print("██╔══██╗██║    ██║    ██║██║████╗  ██║██╔════╝")
@@ -584,7 +579,7 @@ while game == False:
                 print("╚═╝  ╚═╝╚═╝     ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚══════╝")
 
                 print (" ")
-                print ("Score Board  ", "X: ", p1score, "O: ", p2score)
+                print ("Score Board  ", "X: ", p1score, "O: ", aiscore)
                 print (" ")
                 print ("+-----------+   +--------------+   +--------------+")
                 print ("|", t1, "|", t2, "|", t3, "|   |", t10, "|", t11, "|", t12, "|   |", t19, "|", t20, "|", t21, "|" )
@@ -654,7 +649,7 @@ while game == False:
                 print("╚═╝     ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝     ╚═╝     ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚══════╝")
 
                 print (" ")
-                print ("Score Board  ", "X: ", p1score, "O: ", p2score)
+                print ("Score Board  ", "X: ", p1score, "O: ", aiscore)
                 print (" ")
                 print ("+-----------+   +--------------+   +--------------+")
                 print ("|", t1, "|", t2, "|", t3, "|   |", t10, "|", t11, "|", t12, "|   |", t19, "|", t20, "|", t21, "|" )
@@ -711,7 +706,7 @@ while game == False:
             boardcheck2 = False
 
             if ((boardcheck1 == False) and (boardcheck2 == False) and (boardcheck3 == False)):
-                p2score += 1
+                aiscore += 1
                 print (" ")
                 print(" █████╗ ██╗    ██╗    ██╗██╗███╗   ██╗███████╗")
                 print("██╔══██╗██║    ██║    ██║██║████╗  ██║██╔════╝")
@@ -721,7 +716,7 @@ while game == False:
                 print("╚═╝  ╚═╝╚═╝     ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚══════╝")
 
                 print (" ")
-                print ("Score Board  ", "X: ", p1score, "O: ", p2score)
+                print ("Score Board  ", "X: ", p1score, "O: ", aiscore)
                 print (" ")
                 print ("+-----------+   +--------------+   +--------------+")
                 print ("|", t1, "|", t2, "|", t3, "|   |", t10, "|", t11, "|", t12, "|   |", t19, "|", t20, "|", t21, "|" )
@@ -791,7 +786,7 @@ while game == False:
                 print("╚═╝     ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝     ╚═╝     ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚══════╝")
 
                 print (" ")
-                print ("Score Board  ", "X: ", p1score, "O: ", p2score)
+                print ("Score Board  ", "X: ", p1score, "O: ", aiscore)
                 print (" ")
                 print ("+-----------+   +--------------+   +--------------+")
                 print ("|", t1, "|", t2, "|", t3, "|   |", t10, "|", t11, "|", t12, "|   |", t19, "|", t20, "|", t21, "|" )
@@ -848,7 +843,7 @@ while game == False:
             boardcheck3 = False
 
             if ((boardcheck1 == False) and (boardcheck2 == False) and (boardcheck3 == False)):
-                p2score += 1
+                aiscore += 1
                 print (" ")
                 print(" █████╗ ██╗    ██╗    ██╗██╗███╗   ██╗███████╗")
                 print("██╔══██╗██║    ██║    ██║██║████╗  ██║██╔════╝")
@@ -858,7 +853,7 @@ while game == False:
                 print("╚═╝  ╚═╝╚═╝     ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚══════╝")
 
                 print (" ")
-                print ("Score Board  ", "X: ", p1score, "O: ", p2score)
+                print ("Score Board  ", "X: ", p1score, "O: ", aiscore)
                 print (" ")
                 print ("+-----------+   +--------------+   +--------------+")
                 print ("|", t1, "|", t2, "|", t3, "|   |", t10, "|", t11, "|", t12, "|   |", t19, "|", t20, "|", t21, "|" )
@@ -941,7 +936,7 @@ while game == False:
             game = True
 
 #Reprinting the board after each turn
-    if game == False:
+    if (game==False):
         print (" ")
         print (" ")
         print ("+-----------+   +--------------+   +--------------+")
